@@ -90,4 +90,29 @@ header {
   padding: 5rem 0;
 }
 
+.flexRow {
+  padding: 2rem 1rem;
+  background-color: #F4F7F7;
+}
+.flexRow__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.flexRow__textCol {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 2rem;
+}
+.flexRow__textCol h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.flexRow__textCol p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=style.css.map */
