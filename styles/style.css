@@ -5,6 +5,15 @@
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 header {
   width: 100%;
   display: flex;
@@ -37,11 +46,29 @@ header {
   margin: 0 auto;
 }
 
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.btn.-primary {
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 55px;
+  transition: ease-in-out 0.3s;
+}
+.btn.-primary:hover {
+  background-color: #3ACE99;
+  color: #000000;
+}
+
 .hero {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.4));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,6 +89,7 @@ header {
   right: 0;
   bottom: 0;
   z-index: -1;
+  filter: grayscale(1) contrast(0.9);
 }
 @media (min-aspect-ratio: 16/9) {
   .video {
@@ -77,12 +105,26 @@ header {
 }
 
 .entryScreen {
+  position: absolute;
+  top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 3rem;
+}
+.entryScreen__title {
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 5.5rem;
+}
+.entryScreen__subtitle {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.entryScreen span {
+  color: #3ACE99;
 }
 
 .timer {
@@ -91,28 +133,65 @@ header {
 }
 
 .flexRow {
-  padding: 2rem 1rem;
   background-color: #F4F7F7;
 }
 .flexRow__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
+  padding: 3.5rem 10rem;
+}
+.flexRow__wrapper.-whiteBg {
+  background-color: #FFFFFF;
+}
+.flexRow__wrapper.-noPadding {
+  padding: 0;
 }
 .flexRow__textCol {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 50%;
   margin-left: 2rem;
+  gap: 1.5rem;
+}
+.flexRow__textCol.-ml10 {
+  margin-left: 10rem;
+}
+.flexRow__textCol.-mr10 {
+  margin-right: 10rem;
 }
 .flexRow__textCol h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
 }
 .flexRow__textCol p {
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__wrapper {
+  background-image: url(../assets/form-bg.svg);
+  background-size: cover;
+  min-height: 50rem;
+  min-width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.footer__wrapper {
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /*# sourceMappingURL=style.css.map */
