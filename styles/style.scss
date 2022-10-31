@@ -1,6 +1,8 @@
 //Colors
 $StandardBlack: #000000;
 $LightGrey: #F4F7F7;
+$LightGrey2: #e2ebeb;
+$StandardGrey: #A9A9A9;
 $StandardWhite: #FFFFFF;
 $LightRed: #FF1F5F;
 $MintGreen: #3ACE99;
@@ -14,7 +16,6 @@ $Poppins: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
 }
-
 
 li {
   list-style-type: none;
@@ -67,6 +68,8 @@ header {
   outline: none;
   font-size: .8rem;
   font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 
 
   &.-primary {
@@ -183,6 +186,7 @@ header {
     &.-ml10 {
       margin-left: 10rem;
     }
+
     &.-mr10 {
       margin-right: 10rem;
     }
@@ -200,21 +204,80 @@ header {
 }
 
 
-.form {
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
 
   &__wrapper {
     background-image: url(../assets/form-bg.svg);
     background-size: cover;
     min-height: 50rem;
-    min-width: 90vw;
+    min-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 7rem 0;
   }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+
+form {
+  width: 110%;
+  text-align: left;
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+
+
+  input {
+    width: 100%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1rem;
+    border-radius: 20px;
+    border: 1px solid $MintGreen;
+    margin-left: 1rem;
+    margin-bottom: .8rem;
+
+    &::placeholder {
+      color: $StandardGrey;
+    }
+  }
+  label {
+    font-size: .8rem;
+    margin-left:1rem;
+  }
+
+  button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 250px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+  }
+}
+
+
 
 
 

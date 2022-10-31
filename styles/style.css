@@ -52,6 +52,8 @@ header {
   outline: none;
   font-size: 0.8rem;
   font-weight: 300;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 .btn.-primary {
   background-color: #000000;
@@ -169,19 +171,67 @@ header {
   font-weight: 400;
 }
 
-.form {
+.contact {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
-.form__wrapper {
+.contact__wrapper {
   background-image: url(../assets/form-bg.svg);
   background-size: cover;
   min-height: 50rem;
-  min-width: 90vw;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 7rem 0;
+}
+.contact__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.contact form {
+  width: 110%;
+  text-align: left;
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+}
+.contact form input {
+  width: 100%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1rem;
+  border-radius: 20px;
+  border: 1px solid #3ACE99;
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+}
+.contact form input::placeholder {
+  color: #A9A9A9;
+}
+.contact form label {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+.contact form button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 250px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .footer {
