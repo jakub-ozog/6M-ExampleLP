@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
+    <script defer src="app/app.js"></script>
 </head>
 <body>
 <div class="container">
@@ -26,8 +27,25 @@
                 <p class="hamburgerMenu__desc">
                     free trial
                 </p>
-                <img src="assets/hamburger.svg" alt="hamburger-menu">
+                <a href="#" data-visible="false" aria-label="Open main menu" title="Open main menu"
+                   aria-haspopup="true" aria-controls="hamburger-menu" class="hamburgerMenu__mainMenuToggle">
+                    <span class="hamburgerMenu__buttonWrap">
+                             <img src="assets/hamburger.svg" alt="hamburger-menu">
+                    </span>
+                </a>
             </div>
+            <div class="hamburgerMenu__menuContainer">
+
+                <button class="hamburgerMenu__menuCloseBtn" aria-expanded="false" aria-controls="primary-navigation">
+
+                </button>
+                <ul class="hamburgerMenu__nav">
+                    <li>Section 1</li>
+                    <li>Section 2</li>
+                    <li>Section 3</li>
+                </ul>
+            </div>
+
         </nav>
     </header>
 </div>
@@ -116,7 +134,7 @@
         </div>
         <div class="flexRow__wrapper -whiteBg -noPadding">
             <div class="flexRow__imgCol">
-                <img src="assets/people_office_grayscale.svg" alt="mobile-phone-in-circle">
+                <img src="assets/people_office_grayscale_2.svg" alt="people-in-the-office">
             </div>
             <div class="flexRow__textCol -mr10">
                 <h2>
@@ -190,47 +208,52 @@
                     <input type="text" id="cname" name="cname" placeholder="Type your company name"><br>
 
                     <button type="submit" value="submit" class="btn -primary">Submit</button>
-
                 </form>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-
-        <div class="footer__wrapper">
+        <div class="footer_logoCol">
             <div class="footer__title">
-                <h2>Built for Retail</h2>
-            </div>
-
-            <div class="footer_menuCol">
-                <p>Explore</p>
-                <ul>
-                    <li>Features</li>
-                    <li>About</li>
-                    <li>Blog</li>
-                    <li>Careers</li>
-                    <li>Terms and Conditions</li>
-                </ul>
-            </div>
-
-            <div class="footer_menuCol">
-                <p>Shiftlab Solutions</p>
-                <ul>
-                    <li>Solutions</li>
-                    <li>Wireless Retails</li>
-                </ul>
-            </div>
-
-            <div class="footer_menuCol">
-                <p>Contact us</p>
-                <ul>
-                    <li>
-                        <a href="mailto:support@contact.io" title="mailto">support@contact.io -></a>
-                    </li>
-                </ul>
+                <h2>Built for Retail.</h2>
             </div>
         </div>
+
+
+        <div class="footer__menuCol">
+            <div class="footer__wrapper">
+                <div class="footer__menuCol">
+                    <p>Explore</p>
+                    <ul>
+                        <li>Features</li>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                        <li>Terms and Conditions</li>
+                    </ul>
+                </div>
+
+                <div class="footer__menuCol">
+                    <p>Shiftlab Solutions</p>
+                    <ul>
+                        <li>Solutions</li>
+                        <li>Wireless Retails</li>
+                    </ul>
+                </div>
+
+                <div class="footer__menuCol">
+                    <p>Contact us</p>
+                    <ul>
+                        <li>
+                            <span> <a href="mailto:support@contact.io" title="mailto">support@contact.io -></a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
     </footer>
 
 
