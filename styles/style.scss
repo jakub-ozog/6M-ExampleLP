@@ -10,6 +10,15 @@ $MintGreen: #3ACE99;
 //Fonts
 $Poppins: 'Poppins', sans-serif;
 
+//Breakpoints
+$BreakpointS: 576px;
+$BreakpointM: 768px;
+$BreakpointL: 992px;
+$BreakpointXL: 1200px;
+$BreakpointXXL: 1500px;
+$BreakpointWS: 2560px;
+
+
 * {
   box-sizing: border-box;
   font-family: $Poppins;
@@ -238,7 +247,21 @@ header {
 
 }
 
+
+.hiddenLeft {
+  opacity: 0;
+  transform: translateX(-100%);;
+}
+
+.hiddenRight {
+  opacity: 0;
+  transform: translateX(-100%);;
+}
+
 .timer {
+  position: sticky;
+  top: 0;
+  z-index: 9;
   background-color: $MintGreen;
   padding: 3rem 0;
 
@@ -247,6 +270,10 @@ header {
       font-size: 3rem;
       font-weight: 500;
       color: $StandardWhite;
+
+      @media (max-width: $BreakpointXXL) {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -271,6 +298,10 @@ header {
     h3 {
       font-size: 2.25rem;
       font-weight: 400;
+
+      @media (max-width: $BreakpointXXL) {
+        font-size: 1.5rem;
+      }
     }
   }
 
@@ -339,8 +370,25 @@ header {
       font-weight: 400;
     }
   }
-}
 
+  #partialImg {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__imgOverlay {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 0px -42px 26px 34px #f4f7f7;
+    //background: linear-gradient(#f4f7f7b8, #f4f7f7);
+    /* background: #f4f7f7; */
+    /* opacity: .68; */
+    //backdrop-filter: blur(9px);
+  }
+}
 
 .contact {
   display: flex;
@@ -406,10 +454,7 @@ header {
       justify-content: center;
       max-width: 250px;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 3rem;
-      margin-bottom: 2rem;
+      margin: 3rem auto 2rem auto;
       cursor: pointer;
     }
   }

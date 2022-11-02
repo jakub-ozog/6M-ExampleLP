@@ -2,13 +2,19 @@ const hamburgerNav = document.querySelector('.hamburgerMenu__mainMenuToggle');
 const toggleNav = document.querySelector('.hamburgerMenu__menuCloseBtn');
 const menuContainer = document.querySelector('.hamburgerMenu__menuContainer')
 
+
 hamburgerNav.addEventListener('click', () => {
     menuContainer.classList.toggle('-show')
-    console.log('click')
 })
 
-toggleNav.addEventListener('click', () => {
+toggleNav.addEventListener('click', (ev) => {
     menuContainer.classList.toggle('-show')
+})
+
+document.addEventListener('mouseup', function (event) {
+    if (event.target.closest('.hamburgerMenu__menuContainer')) return;
+    menuContainer.classList.remove('-show');
+
 })
 
 
@@ -31,7 +37,34 @@ const timer = () => {
     document.querySelector('.timer__hour').textContent = textHour;
     document.querySelector('.timer__minute').textContent = textMinute;
     document.querySelector('.timer__second').textContent = textSecond;
-
 };
 
 setInterval(timer, 1000);
+
+const contact = document.querySelector('.contact');
+const stickyTimer = document.querySelector('.timer')
+const options = {
+    root: null,
+    threshold: 0,
+    rootMargin: "-50%",
+};
+
+const observer = new IntersectionObserver(function (entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            stickyTimer.style.position = 'static'
+            // console.log('intersecting with static')
+        } else {
+            stickyTimer.style.position = 'sticky'
+            // console.log('NOT intersecting')
+        }
+    });
+}, options);
+
+observer.observe(contact);
+
+
+
+
+
+

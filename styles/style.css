@@ -200,7 +200,20 @@ header {
   color: #3ACE99;
 }
 
+.hiddenLeft {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.hiddenRight {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
 .timer {
+  position: sticky;
+  top: 0;
+  z-index: 9;
   background-color: #3ACE99;
   padding: 3rem 0;
 }
@@ -208,6 +221,11 @@ header {
   font-size: 3rem;
   font-weight: 500;
   color: #FFFFFF;
+}
+@media (max-width: 1500px) {
+  .timer__desc p {
+    font-size: 2rem;
+  }
 }
 .timer__elementWrapper {
   display: flex;
@@ -227,6 +245,11 @@ header {
 .timer__singleDateElement h3 {
   font-size: 2.25rem;
   font-weight: 400;
+}
+@media (max-width: 1500px) {
+  .timer__singleDateElement h3 {
+    font-size: 1.5rem;
+  }
 }
 .timer__singleDateType h3 {
   font-weight: 300;
@@ -277,6 +300,20 @@ header {
 .flexRow__textCol p {
   font-size: 1.25rem;
   font-weight: 400;
+}
+.flexRow #partialImg {
+  position: relative;
+  overflow: hidden;
+}
+.flexRow__imgOverlay {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  height: 100%;
+  box-shadow: 0px -42px 26px 34px #f4f7f7;
+  /* background: #f4f7f7; */
+  /* opacity: .68; */
 }
 
 .contact {
@@ -336,10 +373,7 @@ header {
   justify-content: center;
   max-width: 250px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin: 3rem auto 2rem auto;
   cursor: pointer;
 }
 
