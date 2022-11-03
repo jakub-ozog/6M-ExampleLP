@@ -62,6 +62,12 @@ header {
   backdrop-filter: blur(1rem);
   background: hsla(0deg, 0%, 0%, 0.9);
 }
+@media (max-width: 992px) {
+  .hamburgerMenu__menuContainer {
+    inset: 0;
+    align-items: center;
+  }
+}
 .hamburgerMenu__menuContainer.-show {
   transform: translateX(0);
 }
@@ -113,8 +119,13 @@ header {
   outline: none;
   font-size: 0.8rem;
   font-weight: 300;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+}
+@media (max-width: 1240px) {
+  .btn.-md {
+    padding: 0.5rem 1.5rem;
+  }
 }
 .btn.-primary {
   background-color: #000000;
@@ -135,6 +146,9 @@ header {
 .btn.-secondary:hover {
   background-color: #000000;
   color: #FFFFFF;
+}
+.btn.-sm {
+  padding: 0.25rem 1.25rem;
 }
 
 .hero {
@@ -211,20 +225,29 @@ header {
 }
 
 .timer {
-  position: sticky;
   top: 0;
   z-index: 9;
   background-color: #3ACE99;
   padding: 3rem 0;
+}
+@media (max-width: 1400px) {
+  .timer {
+    padding: 0.75rem 0;
+  }
 }
 .timer__desc p {
   font-size: 3rem;
   font-weight: 500;
   color: #FFFFFF;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .timer__desc p {
     font-size: 2rem;
+  }
+}
+@media (max-width: 1240px) {
+  .timer__desc p {
+    font-size: 1.25rem;
   }
 }
 .timer__elementWrapper {
@@ -242,29 +265,63 @@ header {
   border-radius: 10px;
   background: hsla(0deg, 0%, 100%, 0.2);
 }
+@media (max-width: 1140px) {
+  .timer__singleDateElement {
+    width: 65px;
+  }
+}
 .timer__singleDateElement h3 {
   font-size: 2.25rem;
   font-weight: 400;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .timer__singleDateElement h3 {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 1140px) {
+  .timer__singleDateElement h3 {
+    font-size: 1rem;
+  }
+}
 .timer__singleDateType h3 {
   font-weight: 300;
+}
+@media (max-width: 1240px) {
+  .timer__singleDateType h3 {
+    font-size: 1rem;
+  }
 }
 .timer__timerWrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 1400px) {
+  .timer__timerWrapper {
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 1140px) {
+  .timer__timerWrapper {
+    flex-direction: column;
+  }
+}
+.timer__timerBtnWrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
 .timer__counter {
   display: flex;
   justify-content: center;
   gap: 5rem;
 }
-
+@media (max-width: 1400px) {
+  .timer__counter {
+    gap: 3rem;
+  }
+}
 .flexRow {
   background-color: #F4F7F7;
 }
@@ -273,6 +330,23 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 3.5rem 10rem;
+}
+@media (max-width: 1240px) {
+  .flexRow__wrapper.-flexRow {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media (max-width: 1240px) {
+  .flexRow__wrapper {
+    padding: 2rem 0.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .flexRow__wrapper {
+    flex-direction: column;
+    padding: 2rem 0.5rem;
+  }
 }
 .flexRow__wrapper.-whiteBg {
   background-color: #FFFFFF;
@@ -287,19 +361,47 @@ header {
   margin-left: 2rem;
   gap: 1.5rem;
 }
-.flexRow__textCol.-ml10 {
-  margin-left: 10rem;
-}
-.flexRow__textCol.-mr10 {
-  margin-right: 10rem;
+@media (max-width: 1240px) {
+  .flexRow__textCol {
+    width: 80%;
+    margin: 1rem 1.5rem 5rem 1.5rem;
+    text-align: center;
+  }
 }
 .flexRow__textCol h2 {
   font-size: 2.5rem;
   font-weight: 600;
 }
+@media (max-width: 992px) {
+  .flexRow__textCol h2 {
+    font-size: 2rem;
+  }
+}
 .flexRow__textCol p {
   font-size: 1.25rem;
   font-weight: 400;
+}
+@media (max-width: 992px) {
+  .flexRow__textCol p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1240px) {
+  .flexRow__imgCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1240px) {
+  .flexRow__imgCol img.-widthUnset {
+    width: unset;
+  }
+}
+@media (max-width: 1240px) {
+  .flexRow__imgCol img {
+    width: 80%;
+  }
 }
 .flexRow #partialImg {
   position: relative;
@@ -312,8 +414,6 @@ header {
   left: 0;
   height: 100%;
   box-shadow: 0px -42px 26px 34px #f4f7f7;
-  /* background: #f4f7f7; */
-  /* opacity: .68; */
 }
 
 .contact {
