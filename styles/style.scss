@@ -196,6 +196,11 @@ header {
   }
 }
 
+//main {
+//  min-height: 65rem;
+//}
+
+
 .hero {
   position: relative;
   width: 100%;
@@ -582,6 +587,10 @@ header {
     @media (max-width: 992px) {
       font-size: 1.75rem;
     }
+
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
+    }
   }
 
   p {
@@ -608,6 +617,10 @@ header {
       width: 100%;
     }
 
+    span {
+      position: relative;
+    }
+
     input {
       width: 100%;
       padding-top: 1.25rem;
@@ -627,6 +640,11 @@ header {
     }
 
     label {
+      position: absolute;
+      top: 15%;
+      background-color: $LightGrey2;
+      border-radius: 25px;
+      padding: .25rem .5rem;
       font-size: .8rem;
       margin-left: 1rem;
     }

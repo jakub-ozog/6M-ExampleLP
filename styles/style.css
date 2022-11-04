@@ -560,6 +560,11 @@ header {
     font-size: 1.75rem;
   }
 }
+@media (max-width: 576px) {
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+}
 .contact p {
   font-weight: 500;
   font-size: 1.25rem;
@@ -586,6 +591,9 @@ header {
     width: 100%;
   }
 }
+.contact form span {
+  position: relative;
+}
 .contact form input {
   width: 100%;
   padding-top: 1.25rem;
@@ -604,6 +612,11 @@ header {
   color: #A9A9A9;
 }
 .contact form label {
+  position: absolute;
+  top: 15%;
+  background-color: #e2ebeb;
+  border-radius: 25px;
+  padding: 0.25rem 0.5rem;
   font-size: 0.8rem;
   margin-left: 1rem;
 }
