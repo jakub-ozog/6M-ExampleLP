@@ -46,17 +46,16 @@ const stickyTimer = document.querySelector('.timer')
 const options = {
     root: null,
     threshold: 0,
-    rootMargin: "-50%",
 };
 
 const observer = new IntersectionObserver(function (entries, observer) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             stickyTimer.style.position = 'static'
-            // console.log('intersecting with static')
+            stickyTimer.classList.remove('timerAnimIn')
         } else {
             stickyTimer.style.position = 'sticky'
-            // console.log('NOT intersecting')
+            stickyTimer.classList.add('timerAnimIn')
         }
     });
 }, options);

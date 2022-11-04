@@ -14,8 +14,8 @@
     <script defer src="app/app.js"></script>
 </head>
 <body>
-<div class="container">
 
+<div class="container">
     <header>
         <div class="logo">
             <p class="logo__desc">
@@ -24,9 +24,11 @@
         </div>
         <nav>
             <div class="hamburgerMenu">
-                <p class="hamburgerMenu__desc">
-                    free trial
-                </p>
+                <div class="hamburgerMenu__desc">
+                    <p>
+                        free trial
+                    </p>
+                </div>
                 <a href="#" data-visible="false" aria-label="Open main menu" title="Open main menu"
                    aria-haspopup="true" aria-controls="hamburger-menu" class="hamburgerMenu__mainMenuToggle">
                     <span class="hamburgerMenu__buttonWrap">
@@ -35,9 +37,7 @@
                 </a>
             </div>
             <div id="sidebarMenu" class="hamburgerMenu__menuContainer">
-
                 <button class="hamburgerMenu__menuCloseBtn" aria-expanded="false" aria-controls="primary-navigation">
-
                 </button>
                 <ul class="hamburgerMenu__nav">
                     <li>Section 1</li>
@@ -45,7 +45,6 @@
                     <li>Section 3</li>
                 </ul>
             </div>
-
         </nav>
     </header>
 </div>
@@ -63,33 +62,27 @@
                     payroll with our integrated time clock solution.
                 </p>
                 <div>
-                <a href="#" class="btn -primary " title="schedule a demo">schedule a free demo</a>
-
+                    <a href="#contact" class="btn -primary " title="schedule a demo">schedule a free demo</a>
                 </div>
             </div>
         </div>
     </main>
 
-    <section class="timer">
+    <section class="timer ">
         <div class="timer__timerWrapper">
             <div class="timer__desc">
                 <p>Hurry up!</p>
             </div>
-
             <div class="timer__counter">
                 <div class="timer__elementWrapper">
-
                     <div class="timer__singleDateElement">
                         <h3 class="timer__day"></h3>
                     </div>
-
                     <div class="timer__singleDateType">
                         <h3>days</h3>
                     </div>
                 </div>
-
                 <div class="timer__elementWrapper">
-
                     <div class="timer__singleDateElement">
                         <h3 class="timer__hour"></h3>
                     </div>
@@ -97,17 +90,14 @@
                         <h3>hours</h3>
                     </div>
                 </div>
-
                 <div class="timer__elementWrapper">
                     <div class="timer__singleDateElement">
                         <h3 class="timer__minute"></h3>
                     </div>
-
                     <div class="timer__singleDateType">
                         <h3>minutes</h3>
                     </div>
                 </div>
-
                 <div class="timer__elementWrapper">
                     <div class="timer__singleDateElement">
                         <h3 class="timer__second"></h3>
@@ -117,7 +107,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="timer__timerBtnWrapper">
                 <a href="#contact" title="schedule a free demo" class="btn -secondary -md">Schedule a free demo</a>
             </div>
@@ -154,9 +143,8 @@
                 </p>
             </div>
         </div>
-        <div class="flexRow__wrapper -noPadding -flexRow">
-
-            <div class="flexRow__textCol">
+        <div class="flexRow__wrapper -noPadding -flexRow -bgImg">
+            <div class="flexRow__textCol -extraMargin">
                 <h2>
                     Eliminate Buddy Punching
 
@@ -167,15 +155,15 @@
                     member is present to begin their shift.
                 </p>
             </div>
-            <div class="flexRow__imgCol">
+            <div class="flexRow__imgCol -dispNone">
                 <img class="flexRow__gradientImg -widthUnset" src="assets/thumb_up_grayscale.svg" alt="thumb-up-image">
             </div>
         </div>
-        <div class="flexRow__wrapper -whiteBg -noPadding">
-            <div class="flexRow__imgCol ">
+        <div class="flexRow__wrapper -whiteBg -noPadding -flexRow -bgImg2">
+            <div class="flexRow__imgCol -dispNone">
                 <img class="-flexRow" src="assets/people_office_grayscale_2.svg" alt="people-in-the-office">
             </div>
-            <div class="flexRow__textCol -mr10">
+            <div class="flexRow__textCol -mr10 -extraMargin">
                 <h2>
                     Help your team take
                     breaks, and stay labor
@@ -186,10 +174,8 @@
                     stay labor compliant with built-in attestation and break alerts
                 </p>
             </div>
-
         </div>
         <div class="flexRow__wrapper">
-
             <div class="flexRow__textCol">
                 <h2>
                     Get Real-Time Feedback
@@ -199,7 +185,7 @@
                     on late store openings, missed breaks and overtime.
                 </p>
             </div>
-            <div class="flexRow__imgCol" id="partialImg" >
+            <div class="flexRow__imgCol" id="partialImg">
                 <img src="assets/phone_cirlce_front2.svg" alt="thumb-up-image">
                 <div class="flexRow__imgOverlay">
                 </div>
@@ -223,7 +209,6 @@
     <section class="contact" id="contact">
         <div class="contact__wrapper">
             <div class="contact__desc">
-                <!--            <img src="assets/form-bg.svg" alt="">-->
                 <p>
                     Schedule a free demo
                 </p>
@@ -235,16 +220,12 @@
                 <form>
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" placeholder="Type your email address"><br>
-
                     <label for="fname">first name</label><br>
                     <input type="text" id="fname" name="fname" placeholder="Type your first name"><br>
-
                     <label for="lname">last name</label><br>
                     <input type="text" id="lname" name="lname" placeholder="Type your last name"><br>
-
                     <label for="cname">company name</label><br>
                     <input type="text" id="cname" name="cname" placeholder="Type your company name"><br>
-
                     <button type="submit" value="submit" class="btn -primary">Submit</button>
                 </form>
             </div>
@@ -252,12 +233,9 @@
     </section>
 
     <footer class="footer">
-        <div class="footer_logoCol">
-            <div class="footer__title">
-                <h2>Built for Retail.</h2>
-            </div>
+        <div class="footer__title">
+            <h2>Built for Retail.</h2>
         </div>
-
         <div class="footer__menuCol">
             <div class="footer__wrapper">
                 <div class="footer__menuCol">
@@ -270,7 +248,6 @@
                         <li>Terms and Conditions</li>
                     </ul>
                 </div>
-
                 <div class="footer__menuCol">
                     <p>Shiftlab Solutions</p>
                     <ul>
@@ -278,7 +255,6 @@
                         <li>Wireless Retails</li>
                     </ul>
                 </div>
-
                 <div class="footer__menuCol">
                     <p>Contact us</p>
                     <ul>
@@ -290,8 +266,7 @@
             </div>
         </div>
     </footer>
-
-
 </div>
+
 </body>
 </html>
