@@ -327,25 +327,25 @@ header {
     width: 65px;
   }
 }
-.timer__singleDateElement h3 {
+.timer__singleDateElement h2 {
   font-size: 2.25rem;
   font-weight: 400;
 }
 @media (max-width: 1400px) {
-  .timer__singleDateElement h3 {
+  .timer__singleDateElement h2 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 1140px) {
-  .timer__singleDateElement h3 {
+  .timer__singleDateElement h2 {
     font-size: 1rem;
   }
 }
-.timer__singleDateType h3 {
+.timer__singleDateType h2 {
   font-weight: 300;
 }
 @media (max-width: 1240px) {
-  .timer__singleDateType h3 {
+  .timer__singleDateType h2 {
     font-size: 1rem;
   }
 }

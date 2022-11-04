@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="6M - Inbound Marketing Agency">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>6M - Inbound Marketing Agency</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -29,15 +30,16 @@
                         free trial
                     </p>
                 </div>
-                <a href="#" data-visible="false" aria-label="Open main menu" title="Open main menu"
-                   aria-haspopup="true" aria-controls="hamburger-menu" class="hamburgerMenu__mainMenuToggle">
+                <a href="#" aria-label="menu" title="button"
+                   class="hamburgerMenu__mainMenuToggle">
                     <span class="hamburgerMenu__buttonWrap">
                              <img src="assets/hamburger.svg" alt="hamburger-menu">
                     </span>
                 </a>
             </div>
             <div id="sidebarMenu" class="hamburgerMenu__menuContainer">
-                <button class="hamburgerMenu__menuCloseBtn" aria-expanded="false" aria-controls="primary-navigation">
+                <button type="button" class="hamburgerMenu__menuCloseBtn"
+                        aria-label="close" title="button">
                 </button>
                 <ul class="hamburgerMenu__nav">
                     <li>Section 1</li>
@@ -76,34 +78,34 @@
             <div class="timer__counter">
                 <div class="timer__elementWrapper">
                     <div class="timer__singleDateElement">
-                        <h3 class="timer__day"></h3>
+                        <h2 class="timer__day"></h2>
                     </div>
                     <div class="timer__singleDateType">
-                        <h3>days</h3>
+                        <h2>days</h2>
                     </div>
                 </div>
                 <div class="timer__elementWrapper">
                     <div class="timer__singleDateElement">
-                        <h3 class="timer__hour"></h3>
+                        <h2 class="timer__hour"></h2>
                     </div>
                     <div class="timer__singleDateType">
-                        <h3>hours</h3>
+                        <h2>hours</h2>
                     </div>
                 </div>
                 <div class="timer__elementWrapper">
                     <div class="timer__singleDateElement">
-                        <h3 class="timer__minute"></h3>
+                        <h2 class="timer__minute"></h2>
                     </div>
                     <div class="timer__singleDateType">
-                        <h3>minutes</h3>
+                        <h2>minutes</h2>
                     </div>
                 </div>
                 <div class="timer__elementWrapper">
                     <div class="timer__singleDateElement">
-                        <h3 class="timer__second"></h3>
+                        <h2 class="timer__second"></h2>
                     </div>
                     <div class="timer__singleDateType">
-                        <h3>seconds</h3>
+                        <h2>seconds</h2>
                     </div>
                 </div>
             </div>
@@ -238,7 +240,7 @@
                         <input type="text" id="cname" name="cname" placeholder="Type your company name"><br>
                     </span>
 
-                    <button type="submit" value="submit" class="btn -primary">Submit</button>
+                    <button type="submit" aria-label="submit" role="button" class="btn -primary">Submit</button>
                 </form>
             </div>
         </div>
